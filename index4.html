@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script type="module">
+  import { rainbowCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+
+  new rainbowCursor();
+</script>
+
+	<title>profile</title>
+	<style>
+		body{background-color: #FFFFFF;
+				  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+          cursor: url(doggy.gif) 2 2, auto;}
+		h1,h2, p,footer, .wrap{margin: 0px;}
+		p{border-color: black; border-style: groove;
+			border-width: medium;}
+		h2{border-style: groove;
+			padding: 5px 5px 5px 5px;
+			text-align: center}
+    h3{font-family: "Times New Roman", Georgia, serif;}
+		h1{width: 1140px; height: 60px; color: blue; text-align: center; padding-top: 15px; background-image: url(sky.jpg); margin: auto;
+		background-size: 1140px;
+	border-color: black; border-style: ridge;
+			border-width: thick;}
+		.wrap{width: 1120px; height: 604px;
+			margin: auto; border-color: black; border-style: ridge;
+			border-width: thick; padding: 10px 10px 10px 10px;}
+		.scrnLeft{width: 312px; height: 600px; float: left; display: flex;}
+		.scrnLeft-1{width: 262px; height: 600px; border-color: black; border-style: groove;
+			text-align: center;
+			background-color: #CCCCFF;}
+		.scrnLeft-2{position: relative;
+			left: 52px;
+			border-color: blue; border-width: 2px; border-style: dotted; width: 200px; background-color: #BABABA;}
+		.scrnRight{width: 800px; height: 600px; float: right; overflow: auto;}
+		@keyframes color {
+			from {background-color: fuchsia;}
+			to{background-color: lime;}}
+		.change{animation-name: color;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;}
+		.bttnCrd{
+			font-size: 1rem;
+			position: absolute;
+            left: 1518px; 
+            top: 174px;}
+		.bttnProfile{background-color: transparent;
+			text-shadow: 1px 1px 1px #000;
+			color: yellow;
+			font-size: 1.5rem;
+			position: relative;
+            left: 437px; 
+            top: 170px;}
+        .bttnInsta{background-color: transparent;
+        	text-shadow: 1px 1px 1px #000;
+			color: yellow;
+			font-size: 1.5rem;
+			position: relative;
+            left: 80px; 
+            top: 510px;}
+        .bttnWorks{background-color: transparent;
+        	text-shadow: 1px 1px 1px #000;
+			color: yellow;
+			font-size: 1.5rem;
+			position: relative;
+            left: 60px; 
+            top: 200px;}
+        .bttnBox{background-color: transparent;
+        	text-shadow: 1px 1px 1px #000;
+			color: yellow;
+			font-size: 1.5rem;
+			position: relative;
+            left: 175px; 
+            top: 475px;}
+        .bttnPlaylist{background-color: transparent;
+        	text-shadow: 1px 1px 1px #000;
+			color: yellow;
+			font-size: 1.5rem;
+			position: relative;
+            left: 10px; 
+            top: 425px;}
+        .bttnContact{background-color: transparent;
+        	text-shadow: 1px 1px 1px #000;
+			color: yellow;
+			font-size: 1.5rem;
+			position: relative;
+            left: 20px; 
+            top: 400px;}
+        .sticker1{position: absolute;
+            left: 150px; 
+            top: 637px;
+            width: 200px;
+            z-index: 999;}
+        .sticker1:hover{
+          animation: vibration 0.07s infinite;
+          }
+        @keyframes vibration {
+      from {
+        transform: rotate(1.5deg);
+      }
+      to {
+        transform: rotate(-1deg);
+      }
+    }
+        .sticker2{position: absolute;
+            left: 105px; 
+            top: 0px;
+            width: 300px;
+            z-index: 999;}
+        .footfoot{text-align: center;
+        			color: blue;
+        			font-size: 0.7rem;
+        			padding-top: 42px;
+        			padding-bottom: 32px;
+        			line-height: 1.5;
+              font-family: "Times New Roman", Georgia, serif;}
+        .abouttxt{text-align: left;
+              color: blue;
+              font-size: 0.8rem;
+              padding-left: 25px;
+              padding-top: 0px;
+              padding-bottom: 0px;
+              line-height: 1.5;
+              font-family: "Times New Roman", Georgia, serif;}
+        .abouttxt:hover{
+        transform: rotate(-5deg);}
+        .abouttxt2{text-align: left;
+        			color: blue;
+        			font-size: 1.5rem;
+              padding-left: 25px;
+        			padding-top: 0px;
+        			padding-bottom: 0px;
+        			line-height: 1.5;}
+        .abouttxt2:hover{
+        transform: rotate(5deg); color: white; background-color: blue; border-color: white;}
+        .banner{position: relative;
+            right: 0px; 
+            top: 0px;
+            width: 88px;}
+        .banbox{position: absolute;
+          width: 200px;
+          height: 700px;
+          float: right;
+          top: 100px;
+          right: 87px;
+          margin: auto;
+          text-align: center;}
+        .cardbox{position: absolute;
+          width: 200px;
+          height: 700px;
+          float: right;
+          top: 0px;
+          right: 0px;
+          margin: auto;
+          text-align: center;}
+          .cardy{position: relative;
+            right: 0px; 
+            top: 0px;
+            width: 88px;}
+		.flow-text {
+	  display: flex;
+      flex: 0 0 auto;
+      white-space: nowrap;
+      overflow: hidden;
+      transition: 0.3s;
+      font-size: 2.5rem;
+      font-weight:bold;
+      color: #9D9993;
+      font-family: "Times New Roman", Georgia, serif;
+  }
+  .flow-text:hover {
+    color: yellow;
+  }
+  .flow-text:hover .flow-wrap {
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+  .flow-wrap {
+    animation: textLoop 10s linear infinite;
+    padding-right: 1.4881vw;
+  }
+  
+  @keyframes textLoop {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+  .flow-containerTop{padding-top: 5px; padding-bottom: 15px;}
+   .flow-containerBttm{padding-top: 15px; padding-bottom: 15px;}
+   .mypic{width: 252px;
+   		padding-top: 4px;}
+      a:link {color : blue;
+  text-decoration: none;}
+    a:visited {color : blue;
+  text-decoration: none;}
+  .ggrr { 
+      display: grid;
+      grid-template-columns: 200px 200px;
+      grid-template-rows: 100px 200px;
+      margin: 30px;}
+	</style>
+</head>
+<body>
+	<div class="flow-containerTop">
+                <div class="flow-text">
+                    <div class="flow-wrap">&#x2DA;&#xFF61;&#x169B9;&#x20;&#x22C6;&#xB0;&#x2729;&#x359;&#x358;&#x361;&#x20; welcome to my world &#x1DBB;&#x20;&#x1D5D3;&#x20;&#x10C01;&#x20;&#x2E;&#x141F;&#x20;&#x660;&#x8EA;&#x2B51;&#xAA5C;&#x29E3;&#x208A;</div>
+                    <div class="flow-wrap">&#x2DA;&#xFF61;&#x169B9;&#x20;&#x22C6;&#xB0;&#x2729;&#x359;&#x358;&#x361;&#x20; welcome to my world &#x1DBB;&#x20;&#x1D5D3;&#x20;&#x10C01;&#x20;&#x2E;&#x141F;&#x20;&#x660;&#x8EA;&#x2B51;&#xAA5C;&#x29E3;&#x208A;</div>
+                    <div class="flow-wrap">&#x2DA;&#xFF61;&#x169B9;&#x20;&#x22C6;&#xB0;&#x2729;&#x359;&#x358;&#x361;&#x20; welcome to my world &#x1DBB;&#x20;&#x1D5D3;&#x20;&#x10C01;&#x20;&#x2E;&#x141F;&#x20;&#x660;&#x8EA;&#x2B51;&#xAA5C;&#x29E3;&#x208A;</div>
+                    <div class="flow-wrap">&#x2DA;&#xFF61;&#x169B9;&#x20;&#x22C6;&#xB0;&#x2729;&#x359;&#x358;&#x361;&#x20; welcome to my world &#x1DBB;&#x20;&#x1D5D3;&#x20;&#x10C01;&#x20;&#x2E;&#x141F;&#x20;&#x660;&#x8EA;&#x2B51;&#xAA5C;&#x29E3;&#x208A;</div>
+                </div>
+            </div>
+	<div class="wrap">		
+		<div class="scrnLeft">
+			<div class="scrnLeft-1">
+				<img src="mypic.png" class="mypic">
+				<h3 class="abouttxt2 scrnLeft-2"onclick="location.href='index2.html'">↩ back</h3>
+        <h3 class="abouttxt scrnLeft-2"> <br>潤承의 세계에서 모라토리엄은<br>규칙이자 질서다.<br>자기 자신을 발견하기 위해<br>제멋대로 그림을 그리며<br>어른이 되길 유예하고 있다.<br> <br></h3>
+			</div>
+		</div>
+		<p class="scrnRight">
+		</p>
+	</div>
+	<footer class="footfoot">
+		SEOUL, KOREA<br>2025 © brainrotmilk. ALL RIGHTS RESERVED.
+	</footer>
+  <img title="얘는 우리집 앞 골목에 사는 길냥이다. 롯데월드 머리띠를 쓰고 있는게 특징이다." src="kitty.png" class="sticker1">
+  <div class="banbox">
+  <img src="https://anlucas.neocities.org/2cows.gif" class="banner">
+  <img src="https://anlucas.neocities.org/263gggk.gif" class="banner">
+  <img src="https://cyber.dabamos.de/88x31/mobiles.gif" class="banner">
+  <img src="https://cyber.dabamos.de/88x31/blink-0.gif" class="banner">
+  <img src="https://cyber.dabamos.de/88x31/absfree.gif" class="banner">
+  <img src="https://anlucas.neocities.org/winmedia.gif" class="banner">
+  <img src="https://anlucas.neocities.org/send_this_page.gif" class="banner">
+  <img src="https://anlucas.neocities.org/freelist.gif" class="banner">
+  <img src="https://cyber.dabamos.de/88x31/nocookie.gif" class="banner">
+  <img src="https://anlucas.neocities.org/classicgaming.gif" class="banner">
+  <img src="https://cyber.dabamos.de/88x31/finger.gif" class="banner">
+  <img src="https://cyber.dabamos.de/88x31/gticon.gif" class="banner">
+  <img src="https://cyber.dabamos.de/88x31/cssdif.gif" class="banner">
+  <img src="https://anlucas.neocities.org/Ebay.gif" class="banner">
+ <img src="https://anlucas.neocities.org/nukeieani.gif" class="banner">
+  <img src="https://anlucas.neocities.org/hatemac.jpg" class="banner">
+  <img src="https://cyber.dabamos.de/88x31/xp.gif" class="banner">
+  <img src="https://anlucas.neocities.org/bookmark_this_page.gif" class="banner">
+  <img src="https://cyber.dabamos.de/88x31/milktea.gif" class="banner">
+  <img src="https://owlman.neocities.org/OwlMan/Banners/98plusani.gif" class="banner">
+  <img src="https://anlucas.neocities.org/office97.gif" class="banner">
+  <img src="https://cyber.dabamos.de/88x31/nowebp.gif" class="banner">
+  <img src="https://cyber.dabamos.de/88x31/chrmevil.gif" class="banner">
+  <img src="https://cyber.dabamos.de/88x31/hasmile.gif" class="banner">
+  <img src="https://cyber.dabamos.de/88x31/duvigneaud_net.gif" class="banner">
+  <img src="https://cyber.dabamos.de/88x31/folder2.gif" class="banner">
+  <img src="https://anlucas.neocities.org/getacomp.jpg" class="banner">
+  <img src="https://cyber.dabamos.de/88x31/gaywebring.gif" class="banner">
+  <img src="https://cyber.dabamos.de/88x31/diva.gif" class="banner">
+  <img src="https://cyber.dabamos.de/88x31/freakbutton.gif" class="banner">
+  <img src="https://cyber.dabamos.de/88x31/goblins.gif" class="banner">
+  <img src="https://cyber.dabamos.de/88x31/icw_ckm.gif" class="banner">
+  <img src="https://cyber.dabamos.de/88x31/iccsania.gif" class="banner">
+  <img src="https://cyber.dabamos.de/88x31/new-tab.gif" class="banner">
+  <img src="https://cyber.dabamos.de/88x31/slash.gif" class="banner">
+  <img src="https://cyber.dabamos.de/88x31/questions-comments.gif" class="banner">
+  <img src="https://cyber.dabamos.de/88x31/hurtsnow.gif" class="banner">
+  <img src="https://cyber.dabamos.de/88x31/imhigh.gif" class="banner">
+  <img src="https://cyber.dabamos.de/88x31/rainbow_bev.gif" class="banner">
+</div>
+	<div class="flow-containerBttm">
+                <div class="flow-text">
+                    <div class="flow-wrap">&#x2DA;&#xFF61;&#x169B9;&#x20;&#x22C6;&#xB0;&#x2729;&#x359;&#x358;&#x361;&#x20; welcome to my world &#x1DBB;&#x20;&#x1D5D3;&#x20;&#x10C01;&#x20;&#x2E;&#x141F;&#x20;&#x660;&#x8EA;&#x2B51;&#xAA5C;&#x29E3;&#x208A;</div>
+                    <div class="flow-wrap">&#x2DA;&#xFF61;&#x169B9;&#x20;&#x22C6;&#xB0;&#x2729;&#x359;&#x358;&#x361;&#x20; welcome to my world &#x1DBB;&#x20;&#x1D5D3;&#x20;&#x10C01;&#x20;&#x2E;&#x141F;&#x20;&#x660;&#x8EA;&#x2B51;&#xAA5C;&#x29E3;&#x208A;</div>
+                    <div class="flow-wrap">&#x2DA;&#xFF61;&#x169B9;&#x20;&#x22C6;&#xB0;&#x2729;&#x359;&#x358;&#x361;&#x20; welcome to my world &#x1DBB;&#x20;&#x1D5D3;&#x20;&#x10C01;&#x20;&#x2E;&#x141F;&#x20;&#x660;&#x8EA;&#x2B51;&#xAA5C;&#x29E3;&#x208A;</div>
+                    <div class="flow-wrap">&#x2DA;&#xFF61;&#x169B9;&#x20;&#x22C6;&#xB0;&#x2729;&#x359;&#x358;&#x361;&#x20; welcome to my world &#x1DBB;&#x20;&#x1D5D3;&#x20;&#x10C01;&#x20;&#x2E;&#x141F;&#x20;&#x660;&#x8EA;&#x2B51;&#xAA5C;&#x29E3;&#x208A;</div>
+                </div>
+            </div>
+</body>
+</html>
